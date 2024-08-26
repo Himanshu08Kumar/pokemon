@@ -26,17 +26,18 @@ body{
 }
 button {
     margin: 0 5px 10px 0 ;
-    padding: 8px 16px;
+    background: transparent;
+    /* padding: 8px 16px; */
     border: none;
     border-radius: 20px;
     text-align: center;
     font-size: 16px;   
     transition: all 0.3s ease;
 }
-button:hover{
-    animation: colorTransition 1s infinite;
-    color: white;
-}
+/* button:hover{
+    /* animation: colorTransition 1s infinite; */
+    /* color: white; */
+/* } */
 
 @keyframes colorTransition {
     0% {
@@ -51,7 +52,11 @@ button:hover{
       background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); /* End color (same as start) */
     }
   }
-
+.toggle{
+  font-size: 40px;
+  margin-bottom: -15px;
+  
+}
 input{
     margin: 0 5px 10px 0 ;
     padding: 8px 10px;
