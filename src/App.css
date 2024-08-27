@@ -93,6 +93,7 @@ input {
   text-align: center;
   width: 72px;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .search {
@@ -107,6 +108,18 @@ input {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+}
+.footer{
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  margin-top: 50px;
+  font-size: 16px;
+  background-color: bisque;
+  color: black;
+  padding:10px;
+  border-radius: 30px;
+  font-weight: 600;
 }
 
 
