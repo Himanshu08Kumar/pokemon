@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { FaToggleOn } from 'react-icons/fa'
 import { FaToggleOff } from 'react-icons/fa'
 
+
 const Header = () => {
     const [backgroundTheme, setBackgroundTheme] = useState();
 
@@ -19,10 +20,12 @@ const Header = () => {
           document.body.classList.remove("light-Theme");
         }
       },[backgroundTheme])
+
+
     
   return (
     <>
-    
+      
       <button onClick={change}>{backgroundTheme ? <FaToggleOn className='toggle'/> : <FaToggleOff className='toggle' style={{color:'white'}}/>}</button>
      
      
