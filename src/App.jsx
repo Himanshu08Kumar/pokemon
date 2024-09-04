@@ -1,7 +1,11 @@
 import './App.css'
-import Details from "./components/Details";
+import React, {lazy, Suspense} from "react"
+// import Details from "./components/Details";
 import Header from "./components/Header";
+import Spinner from './components/Spinner';
 import Footer from './components/Footer';
+const Details = lazy(()=> import("./components/Details"));
+
 
 function App() {
 
@@ -9,8 +13,10 @@ function App() {
   return (
     <>
     <Header/>
+    <Suspense fallback={<Spinner/>}>
     <Details/>
-    <Footer/>
+    </Suspense>
+    {/* <Footer/> */}
     </>
   )
 }
